@@ -6,7 +6,9 @@ import Welcome from '../Components/Welcome'
 import HowItWorks from '../Components/HowItWorks'
 import FindPartner from '../Components/FindPartner'
 import LatestBlog from '../Components/LatestBlog'
-
+import OurMembers from '../Components/OurMembers'
+import Footer from '../Components/Footer'
+import Stories from '../Components/Stories'
 const Home = () => {
   return (
     <>
@@ -14,10 +16,12 @@ const Home = () => {
       <Navbar/>
       <Hero/>
       <Welcome/>
+      <OurMembers/>
+      <Stories/>
       <HowItWorks/>
       <LatestBlog/>
       <FindPartner/>
-      
+      <Footer/>
     </>
   )
 }
