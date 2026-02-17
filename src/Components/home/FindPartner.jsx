@@ -15,7 +15,7 @@ const FindPartner = () => {
             </h2>
 
             <p className="text-gray-600 mb-1 leading-relaxed">
-              Start your journey today with the WP Matrimony and find a perfect
+              Start your journey today with the BodhiBridal Matrimony and find a perfect
               match. Get ready to capture all those beautiful memories for
               yourself, because these are things that will last forever!
             </p>
@@ -42,7 +42,7 @@ const FindPartner = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="w-92 h-92 md:w-126 md:h-126 rounded-full overflow-hidden shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?q=80&w=800"
+                src="https://wpmatrimony.wpdating.com/wp-content/uploads/2021/11/pexels-mv-photography-8565495.png"
                 alt="Couple"
                 className="w-full h-full object-cover"
               />

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/New-Logo-2.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,7 +10,14 @@ const Navbar = () => {
         
         {/* Left Section - Logo */}
         <div className="text-2xl font-bold text-red-600">
-          <Link to="/">MyLogo</Link>
+<Link to="/" className="flex items-center gap-2">
+  <img 
+    src={logo} 
+    alt="BodhiBridal Logo"
+    className="h-14 w-auto object-contain hover:scale-105 transition duration-300"
+  />
+</Link>
+
         </div>
 
         {/* Center Section - Desktop Menu */}

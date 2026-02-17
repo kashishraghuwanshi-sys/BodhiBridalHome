@@ -17,9 +17,9 @@ const Footer = () => {
 
           {/* 1️⃣ About */}
           <div>
-            <h3 className="text-3xl font-bold mb-4">WP Matrimony</h3>
+            <h3 className="text-3xl font-bold mb-4">BodhiBridal Matrimony</h3>
             <p className="text-white/90 mb-6">
-              WP Matrimony helps you find your perfect soulmate. Join today and
+              BodhiBridal Matrimony helps you find your perfect soulmate. Join today and
               start searching for your partner right away.
             </p>
 

@@ -32,6 +32,46 @@ const membersData = [
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600",
     online: true,
   },
+    {
+    id: 4,
+    name: "Kashish Singh",
+    gender: "Woman",
+    age: 28,
+    location: "Pune, India",
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600",
+    online: true,
+  },
+      {
+    id: 5,
+    name: "kriti Singh",
+    gender: "Woman",
+    age: 28,
+    location: "Pune, India",
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600",
+    online: true,
+  },
+    {
+    id: 6,
+    name: "Rahul Verma",
+    gender: "Man",
+    age: 32,
+    location: "Delhi, India",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600",
+    online: false,
+  },
+  {
+    id: 7,
+    name: "Rahul Verma",
+    gender: "Man",
+    age: 32,
+    location: "Delhi, India",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600",
+    online: false,
+  },
 ];
 
 const OurMembers = () => {
@@ -57,7 +97,7 @@ const OurMembers = () => {
           </h2>
 
           <p className="text-white/90">
-            The beginning of a beautiful relationship is here. The WP Matrimony
+            The beginning of a beautiful relationship is here. The BodhiBridal Matrimony
             is a great place to find potential matches.
             <br />
             Why not start looking for your ideal partner online right away?

@@ -14,7 +14,7 @@ const HowItWorks = () => {
           </h2>
 
           <p className="text-gray-600">
-            WP Matrimony will help you find your perfect match with just a few
+           BodhiBridal Matrimony will help you find your perfect match with just a few
             steps. You focus on what is most important to you, we do all the work.
           </p>
         </div>
