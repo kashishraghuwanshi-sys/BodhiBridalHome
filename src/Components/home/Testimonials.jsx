@@ -1,8 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/autoplay";
+
+import img1 from "../../assets/images/32.jpg";
+import img2 from "../../assets/images/44.jpg";
+import img3 from "../../assets/images/65.jpg";
+import img4 from "../../assets/images/54.jpg";
 
 const testimonials = [
   {
@@ -10,35 +14,35 @@ const testimonials = [
     description:
       "BodhiBridal Matrimony is by far my favourite of all the sites I've tried and it's where I've had the most success. It provides possibilities that other sites do not, such as Near me, Meet me, Date Tracker etc.",
     name: "Amit Sharma",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: img1,
   },
   {
     title: "Amazing Experience",
     description:
       "I found my perfect match here. The platform is simple, effective and filled with genuine profiles. Highly recommended!",
     name: "Anjali Verma",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: img2,
   },
   {
     title: "Best Matrimony Platform",
     description:
       "The features and filters helped me narrow down my search easily. Great experience overall!",
     name: "Rahul Mehta",
-    image: "https://randomuser.me/api/portraits/men/76.jpg",
+    image: img3,
   },
   {
     title: "Trustworthy & Reliable",
     description:
       "Security and privacy are top-notch. I felt confident using WP Matrimony throughout my journey.",
     name: "Sneha Kapoor",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    image: img4,
   },
   {
     title: "Highly Successful",
     description:
       "This platform helped me connect with the right people quickly. Very happy with the results!",
     name: "Vikram Singh",
-    image: "https://randomuser.me/api/portraits/men/54.jpg",
+    image: img3,
   },
 ];
 

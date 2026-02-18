@@ -1,4 +1,8 @@
 import { CalendarDays } from "lucide-react";
+import img1 from "../../assets/images/photo-1529626455594-4ff0802cfb7e.jpg";
+import img2 from "../../assets/images/photo-1500648767791-00dcc994a43e.jpg";
+import img3 from "../../assets/images/photo-1517841905240-472988babdf9.jpg";
+
 
 const LatestBlog = () => {
   return (
@@ -28,7 +32,7 @@ const LatestBlog = () => {
           {/* Card 1*/}
           <div className="text-white rounded-xl overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac"
+              src={img1}
               alt="couple"
               className="w-full h-72 rounded-xl object-cover"
             />
@@ -48,7 +52,7 @@ const LatestBlog = () => {
           {/* Card 2*/}
           <div className=" text-white rounded-xl overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+              src={img2}
               alt="couple"
               className="w-full rounded-xl h-72 object-cover"
             />
@@ -68,7 +72,7 @@ const LatestBlog = () => {
           {/* Card 3*/}
           <div className=" text-white rounded-xl overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+              src={img3}
               alt="couple"
               className="w-full rounded-xl h-72 object-cover"
             />

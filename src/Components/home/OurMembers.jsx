@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { Star, User, UserRound, UserCheck } from "lucide-react";
 
+import img1 from "../../assets/images/photo-1529626455594-4ff0802cfb7e.jpg";
+import img2 from "../../assets/images/photo-1500648767791-00dcc994a43e.jpg";
+import img3 from "../../assets/images/photo-1517841905240-472988babdf9.jpg";
+
+
+
 const membersData = [
   {
     id: 1,
@@ -9,7 +15,7 @@ const membersData = [
     age: 30,
     location: "Mumbai, India",
     image:
-      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=600",
+      img1,
     online: true,
   },
   {
@@ -19,7 +25,7 @@ const membersData = [
     age: 32,
     location: "Delhi, India",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600",
+      img2,
     online: false,
   },
   {
@@ -29,7 +35,7 @@ const membersData = [
     age: 28,
     location: "Pune, India",
     image:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600",
+      img3,
     online: true,
   },
     {
@@ -39,7 +45,7 @@ const membersData = [
     age: 28,
     location: "Pune, India",
     image:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600",
+      img1,
     online: true,
   },
       {
@@ -49,7 +55,7 @@ const membersData = [
     age: 28,
     location: "Pune, India",
     image:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600",
+      img2,
     online: true,
   },
     {
@@ -59,7 +65,7 @@ const membersData = [
     age: 32,
     location: "Delhi, India",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600",
+      img2,
     online: false,
   },
   {
@@ -69,7 +75,7 @@ const membersData = [
     age: 32,
     location: "Delhi, India",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600",
+      img3,
     online: false,
   },
 ];

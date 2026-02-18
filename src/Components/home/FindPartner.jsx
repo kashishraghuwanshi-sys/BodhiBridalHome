@@ -1,3 +1,5 @@
+  import partnerImg from "../../assets/images/pexels-mv-photography-8565495.png";
+
 const FindPartner = () => {
   return (
     <section className="w-full py-16 bg-gray-50">
@@ -42,7 +44,7 @@ const FindPartner = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="w-92 h-92 md:w-126 md:h-126 rounded-full overflow-hidden shadow-lg">
               <img
-                src="https://wpmatrimony.wpdating.com/wp-content/uploads/2021/11/pexels-mv-photography-8565495.png"
+                src={partnerImg}
                 alt="Couple"
                 className="w-full h-full object-cover"
               />

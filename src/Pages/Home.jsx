@@ -9,7 +9,7 @@ import LatestBlog from '../Components/home/LatestBlog'
 import OurMembers from '../Components/home/OurMembers'
 import Footer from '../Components/common/Footer'
 import Stories from '../Components/home/Stories'
-import Testimonials from '../Components/home/Testimonials'
+import Testimonials from '../Components/home/Testimonials' 
 const Home = () => {
   return (
     <>
@@ -18,6 +18,7 @@ const Home = () => {
       <Hero/>
       <Welcome/>
       <OurMembers/>
+      <Testimonials/>
       <Stories/>
       <HowItWorks/>
       <LatestBlog/>

@@ -1,4 +1,5 @@
 import { CalendarDays } from "lucide-react";
+import img from "../../assets/images/photo-1529634806980-85c3dd6d34ac.jpg";
 
 const Stories = () => {
   return (
@@ -39,7 +40,7 @@ const Stories = () => {
           <div className="max-w-md">
             {/* Image */}
             <img
-              src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?q=80&w=800"
+              src={img}
               alt="Happy Couple"
               className="rounded-xl mb-5 w-full h-60 object-cover"
             />

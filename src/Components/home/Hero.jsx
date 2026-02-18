@@ -1,11 +1,11 @@
 import { Search } from "lucide-react";
+import heroimg from "../../assets/images/photo-1529634806980-85c3dd6d34ac.jpg"
  const Hero = () => {
   return (
     <section
       className="w-full min-h-screen bg-cover bg-center flex items-center"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?q=80&w=1920')",
+        backgroundImage:`url(${heroimg})`,
       }}
     >
       <div className="w-full max-w-7xl mx-auto px-4">

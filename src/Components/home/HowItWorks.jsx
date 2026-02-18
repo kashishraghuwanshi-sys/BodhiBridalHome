@@ -1,3 +1,8 @@
+import registerimg from "../../assets/images/747376.png";
+import FindMatchimg from "../../assets/images/1077114.png";
+import Connecting  from "../../assets/images/733585.png";
+
+
 const HowItWorks = () => {
   return (
     <section className="w-full py-16 bg-white">
@@ -25,7 +30,7 @@ const HowItWorks = () => {
           {/* Card 1 */}
           <div className="p-6 text-center">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/747/747376.png"
+              src={registerimg}
               alt="Register"
               className="w-16 h-16 mx-auto mb-8"
             />
@@ -43,7 +48,7 @@ const HowItWorks = () => {
           {/* Card 2 (Example) */}
           <div className="p-6 text-center">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"
+              src = {FindMatchimg}
               alt="Find Match"
               className="w-16 h-16 mx-auto mb-8"
             />
@@ -60,7 +65,7 @@ const HowItWorks = () => {
           {/* Card 3 (Example) */}
           <div className="p-6 text-center">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+              src= {Connecting}
               alt="Connect"
               className="w-16 h-16 mx-auto mb-8"
             />
