@@ -52,7 +52,7 @@ const Footer = () => {
               </li>
               <li className="flex gap-3">
                 <Mail size={20} />
-                <span>presale@wpdating.com</span>
+                <span>presale@bodhibridaldating.com</span>
               </li>
               <li className="flex gap-3">
                 <Phone size={20} />
@@ -89,7 +89,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto border-t border-white">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
           <p className="text-lg">
-            Copyright © 2026 WP Matrimony. All rights reserved.
+            Copyright © 2026 BodhiBridal Matrimony. All rights reserved.
           </p>
 
           <div className="flex gap-6 text-lg">
