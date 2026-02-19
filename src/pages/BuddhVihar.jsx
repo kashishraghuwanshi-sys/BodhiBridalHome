@@ -1,4 +1,6 @@
 import React from 'react';
+import Navbar from "../components/common/Navbar";
+import Footer from "../components/common/Footer";
 import thikse from "../assets/images/thikse.jpg";
 import phugtal from "../assets/images/phugtal.jpg";
 import bugan from "../assets/images/bugan.jpg";
@@ -132,11 +134,14 @@ function BuddhistMonasteries() {
   ];
 
  return (
+
+
+
     <div className="min-h-screen bg-white">
-      
+      <Navbar />
       {/* Header */}
-      <header className="bg-red-400 shadow-sm mb-20">
-        <div className="max-w-7xl mx-auto px-8 py-8 pt-12">
+      <header className="bg-red-400 shadow-sm mb-10">
+        <div className="max-w-7xl mx-auto px-8 py-8 pt-4">
           <h1 className="text-4xl font-bold text-white text-center">
             Buddhist Monasteries of the World
           </h1>
@@ -154,7 +159,7 @@ function BuddhistMonasteries() {
                 <img 
                   src={monastery.image} 
                   alt={monastery.name}
-                  className="w-full h-[500px] object-cover border-20 border-red-400"
+                  className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] object-cover border-[10px] sm:border-[15px] md:border-[20px] border-red-400"
                 />
 
                 <button className="bg-red-400 hover:bg-red-500 text-white text-xl font-bold py-2 px-5 mt-10 transition-colors">
@@ -179,7 +184,7 @@ function BuddhistMonasteries() {
                 <img 
                   src={monastery.image} 
                   alt={monastery.name}
-                  className="w-full h-[450px] object-cover border-20 border-red-400"
+                  className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] object-cover border-[10px] sm:border-[15px] md:border-[20px] border-red-400"
                 />
                 
                 <p className=" text-xl font-semibold text-gray-700 leading-relaxed mt-10">
@@ -199,7 +204,7 @@ function BuddhistMonasteries() {
                 <img 
                   src={monastery.image} 
                   alt={monastery.name}
-                  className="w-full h-[450px] object-cover border-20 border-red-400"
+                  className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] object-cover border-[10px] sm:border-[15px] md:border-[20px] border-red-400"
                 />
                 
                 <p className="text-xl font-semibold text-gray-700 leading-relaxed mt-10">
@@ -222,7 +227,7 @@ function BuddhistMonasteries() {
                 <img 
                   src={monastery.image} 
                   alt={monastery.name}
-                  className="w-full h-[450px] object-cover border-20 border-red-400"
+                  className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] object-cover border-[10px] sm:border-[15px] md:border-[20px] border-red-400"
                 />
                 
                 <p className="text-xl font-semibold text-gray-700 leading-relaxed mt-10">
@@ -241,6 +246,7 @@ function BuddhistMonasteries() {
           <p className="text-base font-normal">© 2024 Buddhist Monasteries Guide</p>
         </div>
       </footer>
+       <Footer />
 
     </div>
   );

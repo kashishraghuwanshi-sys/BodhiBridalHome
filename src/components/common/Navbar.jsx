@@ -27,7 +27,7 @@ const Navbar = () => {
           <li><Link to="/profile" className="hover:text-red-600">Profile</Link></li>
           <li><Link to="/Sponsers" className="hover:text-red-600">Sponsers</Link></li>
           <li><Link to="/Services-Partners" className="hover:text-red-600">Services/Partners</Link></li>
-          <li><Link to="/Boudhvihar" className="hover:text-red-600">BoudhVihar</Link></li>
+          <li><Link to="/BuddhVihar" className="hover:text-red-600">BuddhVihar</Link></li>
 
           <li><Link to="/contact" className="hover:text-red-600">Contact Us</Link></li>
           <li><Link to="/Blog" className="hover:text-red-600">Blog</Link></li>
@@ -62,7 +62,7 @@ const Navbar = () => {
             <li><Link to="/profile" onClick={() => setIsOpen(false)}>Profile</Link></li>
             <li><Link to="/Sponsers" onClick={() => setIsOpen(false)}>Sponsers</Link></li>
             <li><Link to="/Services-Partners" onClick={() => setIsOpen(false)}>Services/Partners</Link></li>
-            <li><Link to="/Boudhvihar" onClick={() => setIsOpen(false)}>BoudhVihar</Link></li>
+            <li><Link to="/BuddhVihar" onClick={() => setIsOpen(false)}>BuddhVihar</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link></li>
             <li><Link to="/Blog" className="hover:text-red-600">Blog</Link></li>
 
