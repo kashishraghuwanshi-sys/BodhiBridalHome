@@ -30,7 +30,7 @@ const Navbar = () => {
           <li><Link to="/BuddhVihar" className="hover:text-red-600">BuddhVihar</Link></li>
 
           <li><Link to="/contact" className="hover:text-red-600">Contact Us</Link></li>
-          <li><Link to="/Blog" className="hover:text-red-600">Blog</Link></li>
+          <li><Link to="/about" className="hover:text-red-600">About us</Link></li>
         </ul>
 
         {/* Right Section - Button */}
