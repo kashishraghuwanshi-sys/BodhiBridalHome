@@ -3,6 +3,9 @@ import React from 'react';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import buddha from "../assets/images/buddha.jpg";
+import img2 from "../assets/images/photo-1500648767791-00dcc994a43e.jpg";
+import girl from "../assets/images/girl.jpg";
+import whitetshirtboy from "../assets/images/whitetshirtboy.jpg";
 
 function About() {
   
@@ -147,21 +150,21 @@ function About() {
       name: "Dr. Anand Bodhi",
       role: "Founder & Director",
       description: "Buddhist scholar with 20+ years of experience in community development and digital transformation.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400"
+      image: img2
     },
     {
       id: 2,
       name: "Priya Gautam",
       role: "Co-Founder & Head of Operations",
       description: "Expert in social welfare programs and Buddhist community engagement initiatives.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400"
+      image: girl
     },
     {
       id: 3,
       name: "Rahul Ambedkar",
       role: "Head of Technology",
       description: "Tech leader focused on building digital platforms for community empowerment.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400"
+      image: whitetshirtboy
     }
   ];
 

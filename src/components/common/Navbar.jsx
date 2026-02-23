@@ -59,13 +59,14 @@ const Navbar = () => {
         <div className="lg:hidden bg-white shadow-md">
           <ul className="flex flex-col gap-4 px-6 py-4 text-gray-700 font-medium">
             <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
+            <li><Link to="/about" className="hover:text-red-600">About us</Link></li>
             <li><Link to="/member" onClick={() => setIsOpen(false)}>Member</Link></li>
             <li><Link to="/profile" onClick={() => setIsOpen(false)}>Profile</Link></li>
             <li><Link to="/Sponsers" onClick={() => setIsOpen(false)}>Sponsers</Link></li>
             <li><Link to="/Services-Partners" onClick={() => setIsOpen(false)}>Services/Partners</Link></li>
             <li><Link to="/BuddhVihar" onClick={() => setIsOpen(false)}>BuddhVihar</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link></li>
-            <li><Link to="/Blog" className="hover:text-red-600">Blog</Link></li>
+            
 
             <Link
               to="/login"
