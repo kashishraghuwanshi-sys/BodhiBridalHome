@@ -23,6 +23,7 @@ const Navbar = () => {
         {/* Center Section - Desktop Menu */}
         <ul className="hidden lg:flex gap-8 text-gray-700 font-medium">
           <li><Link to="/" className="hover:text-red-600">Home</Link></li>
+          <li><Link to="/about" className="hover:text-red-600">About us</Link></li>
           <li><Link to="/member" className="hover:text-red-600">Members</Link></li>
           <li><Link to="/profile" className="hover:text-red-600">Profile</Link></li>
           <li><Link to="/Sponsers" className="hover:text-red-600">Sponsers</Link></li>
@@ -30,7 +31,7 @@ const Navbar = () => {
           <li><Link to="/BuddhVihar" className="hover:text-red-600">BuddhVihar</Link></li>
 
           <li><Link to="/contact" className="hover:text-red-600">Contact Us</Link></li>
-          <li><Link to="/about" className="hover:text-red-600">About us</Link></li>
+          {/* <li><Link to="/about" className="hover:text-red-600">About us</Link></li> */}
         </ul>
 
         {/* Right Section - Button */}
