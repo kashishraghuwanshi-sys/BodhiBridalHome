@@ -1,10 +1,10 @@
 
 // src/pages/FAQ.jsx
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../components/common/Navbar';
 import DemoRibbon from '../components/common/DemoRibbon';
 import Footer from '../components/common/Footer';
-import { useState , useEffect } from 'react';
+import {useEffect , useState } from 'react';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
