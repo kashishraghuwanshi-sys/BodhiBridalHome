@@ -1,14 +1,17 @@
 
-
-
 // src/pages/FAQ.jsx
 import React, { useState } from 'react';
 import Navbar from '../components/common/Navbar';
 import DemoRibbon from '../components/common/DemoRibbon';
 import Footer from '../components/common/Footer';
+import { useState , useEffect } from 'react';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
+
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const faqs = [
     {
