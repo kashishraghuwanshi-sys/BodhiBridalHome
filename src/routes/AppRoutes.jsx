@@ -5,6 +5,7 @@ import About from "../pages/About";
 import Careers from "../pages/Career";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsAndConditions from "../pages/TermsAndConditions";
+import FAQ from "../pages/FAQ";
 
 
 const AppRoutes = () => {
@@ -16,6 +17,7 @@ const AppRoutes = () => {
       <Route path="/careers" element={<Careers />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
       <Route path="terms-and-conditions" element={<TermsAndConditions/>}/>
+      <Route path="FAQ" element={<FAQ/>}/>
 
       {/* 404 */}
       <Route path="*" element={<h1>Page Not Found</h1>} />
