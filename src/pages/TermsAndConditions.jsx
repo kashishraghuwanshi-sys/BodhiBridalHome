@@ -1,8 +1,14 @@
 import React from "react";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
+import { useEffect} from "react";
 
 function TermsAndConditions() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const sections = [
     {
       id: 1,
@@ -863,13 +869,13 @@ function TermsAndConditions() {
     },
   ];
 
-  return (
+return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-orange-500 to-red-500 py-16 sm:py-20">
+      {/* Hero Section - RED-400 */}
+      <section className="bg-red-400 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Terms & Conditions
@@ -882,10 +888,10 @@ function TermsAndConditions() {
         </div>
       </section>
 
-      {/* Important Notice */}
+      {/* Important Notice - RED-400 */}
       <section className="py-8 bg-red-50 border-b border-red-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border-l-4 border-red-500">
+          <div className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border-l-4 border-red-400">
             <span className="text-3xl">⚠️</span>
             <div>
               <h3 className="font-bold text-red-800 mb-2 text-lg">Important Notice</h3>
@@ -906,21 +912,21 @@ function TermsAndConditions() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid lg:grid-cols-4 gap-8">
             
-            {/* Left Sidebar - Table of Contents (Sticky) */}
+            {/* Left Sidebar - Table of Contents (Sticky) - RED-400 */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-24">
                 <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 max-h-[70vh] overflow-y-auto">
                   <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
-                    <span className="text-orange-500">📋</span> Contents
+                    <span className="text-red-400">📋</span> Contents
                   </h3>
                   <nav className="space-y-1">
                     {sections.map((section) => (
                       <a
                         key={section.id}
                         href={`#section-${section.id}`}
-                        className="block text-xs text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-lg transition-colors"
+                        className="block text-xs text-gray-600 hover:text-red-400 hover:bg-red-50 px-3 py-2 rounded-lg transition-colors"
                       >
-                        <span className="font-semibold text-orange-500 mr-1">
+                        <span className="font-semibold text-red-400 mr-1">
                           {section.id}.
                         </span>
                         {section.title.length > 25
@@ -931,15 +937,15 @@ function TermsAndConditions() {
                   </nav>
                 </div>
 
-                {/* Quick Contact Card */}
-                <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl p-6 mt-6 text-white">
+                {/* Quick Contact Card - RED-400 */}
+                <div className="bg-red-400 rounded-2xl p-6 mt-6 text-white">
                   <h4 className="font-bold mb-2">Have Questions?</h4>
                   <p className="text-sm text-white/90 mb-4">
                     Contact our legal team for any concerns about our terms.
                   </p>
                   <a
                     href="mailto:legal@bodhibridal.com"
-                    className="inline-block bg-white text-orange-500 font-semibold text-sm px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
+                    className="inline-block bg-white text-red-400 font-semibold text-sm px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
                   >
                     Contact Legal
                   </a>
@@ -947,7 +953,7 @@ function TermsAndConditions() {
               </div>
             </div>
 
-            {/* Right Content - Main Sections */}
+            {/* Right Content - Main Sections - RED-400 */}
             <div className="lg:col-span-3">
               {/* All Sections */}
               <div className="space-y-8">
@@ -957,9 +963,9 @@ function TermsAndConditions() {
                     className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 hover:shadow-lg transition-shadow"
                     id={`section-${section.id}`}
                   >
-                    {/* Section Header */}
+                    {/* Section Header - RED-400 */}
                     <div className="flex items-start gap-4 mb-6">
-                      <span className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">
+                      <span className="flex-shrink-0 w-12 h-12 bg-red-400 text-white rounded-xl flex items-center justify-center font-bold text-lg">
                         {section.id}
                       </span>
                       <h2 className="text-xl sm:text-2xl font-bold text-gray-800 pt-2">
@@ -967,7 +973,7 @@ function TermsAndConditions() {
                       </h2>
                     </div>
 
-                    {/* Section Content */}
+                    {/* Section Content - RED-400 */}
                     <div className="space-y-5">
                       {section.content.map((item, idx) => (
                         <div key={idx}>
@@ -978,7 +984,7 @@ function TermsAndConditions() {
                           )}
 
                           {item.highlight ? (
-                            <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
+                            <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
                               <p className="text-red-700 font-medium text-sm">
                                 {item.text}
                               </p>
@@ -989,7 +995,7 @@ function TermsAndConditions() {
                                       key={pointIdx}
                                       className="flex items-start gap-2 text-red-700 text-sm"
                                     >
-                                      <span className="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                      <span className="w-1.5 h-1.5 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
                                       <span>{point}</span>
                                     </li>
                                   ))}
@@ -1010,7 +1016,7 @@ function TermsAndConditions() {
                                       key={pointIdx}
                                       className="flex items-start gap-3 text-gray-600 bg-gray-50 p-3 rounded-lg text-sm"
                                     >
-                                      <span className="w-2 h-2 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>
+                                      <span className="w-2 h-2 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></span>
                                       <span>{point}</span>
                                     </li>
                                   ))}
@@ -1058,8 +1064,8 @@ function TermsAndConditions() {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-12 md:py-16 bg-gradient-to-r from-orange-500 to-red-500">
+      {/* Contact CTA - RED-400 */}
+      <section className="py-12 md:py-16 bg-red-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="text-center lg:text-left">
@@ -1073,13 +1079,13 @@ function TermsAndConditions() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="/contact"
-                className="inline-block bg-white text-orange-500 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-center"
+                className="inline-block bg-white text-red-400 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-center"
               >
                 Contact Support
               </a>
               <a
                 href="/privacy-policy"
-                className="inline-block bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-orange-500 transition-colors text-center"
+                className="inline-block bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-red-400 transition-colors text-center"
               >
                 View Privacy Policy
               </a>
@@ -1095,3 +1101,6 @@ function TermsAndConditions() {
 }
 
 export default TermsAndConditions;
+
+
+

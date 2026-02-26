@@ -1,8 +1,16 @@
-import React from "react";
+
+// src/pages/PrivacyPolicy.jsx
+import React, { useEffect } from 'react';  // ⬅️ useEffect add kiya
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 
 function PrivacyPolicy() {
+
+  // ⭐ YE ADD KARO - Page top se open hoga
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const sections = [
     {
       id: 1,
@@ -296,8 +304,8 @@ function PrivacyPolicy() {
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-orange-500 to-red-500 py-16 sm:py-20">
+      {/* Hero Section - RED-400 COLOR */}
+      <section className="bg-red-400 py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Privacy Policy
@@ -310,13 +318,13 @@ function PrivacyPolicy() {
         </div>
       </section>
 
-      {/* Introduction Box */}
+      {/* Introduction Box - RED-400 */}
       <section className="py-12 md:py-16 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-lg">
+          <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
             <p className="text-gray-700 leading-relaxed">
               Welcome to{" "}
-              <span className="font-bold text-orange-600">BodhiBridal.com</span>
+              <span className="font-bold text-red-400">BodhiBridal.com</span>
               . We are an online matrimonial portal endeavouring constantly to
               provide you with matrimonial services. Since we are strongly
               committed to your right to privacy, we have drawn out a privacy
@@ -326,7 +334,7 @@ function PrivacyPolicy() {
         </div>
       </section>
 
-      {/* Quick Navigation */}
+      {/* Quick Navigation - RED-400 */}
       <section className="py-8 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
           <h3 className="text-lg font-bold text-gray-800 mb-4 text-center">
@@ -337,7 +345,7 @@ function PrivacyPolicy() {
               <a
                 key={section.id}
                 href={`#section-${section.id}`}
-                className="bg-white px-3 py-1.5 rounded-full text-xs sm:text-sm text-gray-600 hover:bg-orange-500 hover:text-white transition-colors shadow-sm border border-gray-200"
+                className="bg-white px-3 py-1.5 rounded-full text-xs sm:text-sm text-gray-600 hover:bg-red-400 hover:text-white transition-colors shadow-sm border border-gray-200"
               >
                 {section.id}. {section.title.substring(0, 25)}
                 {section.title.length > 25 ? "..." : ""}
@@ -347,7 +355,7 @@ function PrivacyPolicy() {
         </div>
       </section>
 
-      {/* Policy Sections */}
+      {/* Policy Sections - RED-400 */}
       <section className="py-12 md:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="space-y-12">
@@ -359,7 +367,7 @@ function PrivacyPolicy() {
               >
                 {/* Section Number & Title */}
                 <div className="flex items-start gap-4 mb-6">
-                  <span className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg flex items-center justify-center font-bold">
+                  <span className="flex-shrink-0 w-10 h-10 bg-red-400 text-white rounded-lg flex items-center justify-center font-bold">
                     {section.id}
                   </span>
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">
@@ -378,7 +386,7 @@ function PrivacyPolicy() {
                       )}
 
                       {item.highlight ? (
-                        <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
+                        <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
                           <p className="text-red-700 font-medium">{item.text}</p>
                         </div>
                       ) : (
@@ -394,7 +402,7 @@ function PrivacyPolicy() {
                               key={pointIdx}
                               className="flex items-start gap-3 text-gray-600"
                             >
-                              <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <span className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
                               <span>{point}</span>
                             </li>
                           ))}
@@ -411,9 +419,9 @@ function PrivacyPolicy() {
               </div>
             ))}
 
-            {/* Grievance Officer Contact Card */}
+            {/* Grievance Officer Contact Card - RED-400 */}
             <div
-              className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 md:p-8 border border-orange-200"
+              className="bg-red-50 rounded-2xl p-6 md:p-8 border border-red-200"
               id="grievance"
             >
               <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
@@ -427,7 +435,7 @@ function PrivacyPolicy() {
                   <h4 className="font-bold text-gray-800 mb-3">
                     Grievance Officer
                   </h4>
-                  <p className="text-orange-600 font-semibold text-lg mb-2">
+                  <p className="text-red-400 font-semibold text-lg mb-2">
                     Mr. [Officer Name]
                   </p>
                   <p className="text-gray-600 text-sm">
@@ -444,7 +452,7 @@ function PrivacyPolicy() {
                   </h4>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <span className="text-orange-500">📍</span>
+                      <span className="text-red-400">📍</span>
                       <span className="text-gray-600">
                         BodhiBridal.com Limited,
                         <br />
@@ -454,10 +462,10 @@ function PrivacyPolicy() {
                       </span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <span className="text-orange-500">✉️</span>
+                      <span className="text-red-400">✉️</span>
                       <a
                         href="mailto:grievanceofficer@bodhibridal.com"
-                        className="text-orange-600 hover:underline"
+                        className="text-red-400 hover:underline"
                       >
                         grievanceofficer@bodhibridal.com
                       </a>
@@ -473,7 +481,7 @@ function PrivacyPolicy() {
                 </h4>
                 <p className="text-gray-600">
                   The Grievance Officer shall be available between{" "}
-                  <span className="font-semibold text-orange-600">
+                  <span className="font-semibold text-red-400">
                     10:00 AM to 6:00 PM IST
                   </span>{" "}
                   from{" "}
@@ -486,7 +494,7 @@ function PrivacyPolicy() {
         </div>
       </section>
 
-      {/* Summary Box */}
+      {/* Summary Box - RED-400 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="bg-white p-8 rounded-2xl shadow-md">
@@ -531,8 +539,8 @@ function PrivacyPolicy() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 p-4 bg-orange-50 rounded-lg">
-                <span className="text-orange-500 text-xl">🇪🇺</span>
+              <div className="flex items-start gap-3 p-4 bg-red-50 rounded-lg">
+                <span className="text-red-400 text-xl">🇪🇺</span>
                 <div>
                   <h4 className="font-semibold text-gray-800">EU Compliance</h4>
                   <p className="text-sm text-gray-600">
@@ -545,8 +553,8 @@ function PrivacyPolicy() {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-12 md:py-16 bg-gradient-to-r from-orange-500 to-red-500">
+      {/* Contact CTA - RED-400 */}
+      <section className="py-12 md:py-16 bg-red-400">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Have Questions About Your Privacy?
@@ -557,13 +565,13 @@ function PrivacyPolicy() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="inline-block bg-white text-orange-500 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
+              className="inline-block bg-white text-red-400 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
             >
               Contact Us
             </a>
             <a
               href="/terms-and-conditions"
-              className="inline-block bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-orange-500 transition-colors"
+              className="inline-block bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-red-400 transition-colors"
             >
               View Terms & Conditions
             </a>
