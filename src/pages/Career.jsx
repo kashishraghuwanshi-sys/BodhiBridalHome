@@ -41,7 +41,7 @@ function Careers() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-400 to-orange-400 py-20">
+      <section className="bg-red-400 py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
             Join Our Team
@@ -202,7 +202,7 @@ function Careers() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-red-400 to-orange-400">
+      <section className="py-16 md:py-24 bg-red-400">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
             Don't See the Right Position?
