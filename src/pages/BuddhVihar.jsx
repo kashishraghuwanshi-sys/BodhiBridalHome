@@ -14,6 +14,7 @@ import xuan from "../assets/images/xuan.jpg";
 import taung from "../assets/images/taung.jpg";
 import punakha from "../assets/images/punakha.jpg";
 import wat from "../assets/images/wat.jpg";
+import { fetchAllMonks } from "../api/monasteriesApi";
 
 function BuddhistMonasteries() {
   // Page scroll to top
@@ -34,8 +35,8 @@ function BuddhistMonasteries() {
     const fetchMonks = async () => {
       try {
         setLoading(true);
-        const response = await fetch("http://localhost:5000/api/monks");
-        const result = await response.json();
+        
+        const response = await fetchAllMonks();
 
         if (result.success) {
           setBuddhistMonks(result.data);
