@@ -31,13 +31,16 @@ function BuddhistMonasteries() {
   const [error, setError] = useState(null);
 
   // Fetch monks from database
-  useEffect(() => {
+useEffect(() => {
     const fetchMonks = async () => {
       try {
         setLoading(true);
+        setError(null);
         
-        const response = await fetchAllMonks();
+        // ✅ API function call karo
+        const result = await fetchAllMonks();
 
+        // ✅ Ab result defined hai
         if (result.success) {
           setBuddhistMonks(result.data);
         } else {
